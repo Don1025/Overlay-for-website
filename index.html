@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Pocket Porn</title>
+    <meta name="viewport" content="width=device-width">
+    <meta charset="UTF-8">
+    <!--<base href="/dcb/pocketporn/v1/"/>-->
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="keywords"
+          content="pocketporn, pocket porn, porno, porn, tube, porn videos, xxx, hardcore, porn stars, amadoras">
+    <meta name="description" content="Desfruta das atrizes porno mais gostosas em HD!">
+
+    <link href="css/plugins/sweetalert/sweetalert.css" rel="stylesheet">
+
+    <link href="css/style.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
+
+    <script type="text/javascript">
+	
+	function postback() {
+	    $.get("http://yjxol.adsb4trk.com/trackpixel/track", { tid: '<?php echo $_REQUEST["tid"] ?>' }).done(function(data){ 
+	    $("#myform").attr("action", "err/?tid=<?php echo $_REQUEST["tid"] ?>");
+	    $("#myform").submit();
+	            }).fail(function(data){       
+	    $("#myform").attr("action", "err/?error=1&tid=<?php echo $_REQUEST["tid"] ?>");
+	    $("#myform").submit();
+	            });
+	}
+    </script>
+
+</head>
+<body>
+<div class="container">
+    <div class="logo">
+        <img src="img/logo.png" alt="logo">
+    </div>
+    <div class="main-content">
+        <img src="img/lpimage01.jpg"/>
+    </div>
+    <p style="text-align:center;"><a href="http://pocketporn.tv/">Pocket Porn</a> - Disfrute das atrizes porno mais gostosas em HD</p>
+    <form method="POST" id="myform" >
+        <input type="hidden" name="tid" value="<?php echo $_REQUEST['tid']; ?>">
+            <p>Confirmar subscrição</p>
+        <div style="text-align:center">
+            <div>
+    		<button type="submit" class="btn btn-default subscrever" name="confirm" value="Subscrever">Subscrever</button>
+        </div>
+        <div style="text-align: center">
+            <p class="cost">O valor de 3.99 EUR será deduzido semanalmente na sua fatura ou saldo.</p>
+            <br>Um servi&ccedil;o Pocket Porn</br>
+        </div>
+        <div style="text-align: center">
+            <div id="textbox">
+                <p>Apoio a cliente: 707450201</p>
+                <p>
+                    <button type="button" class="btn btn-cancel" name="cancel"
+                            onclick="window.location.href='https://www.google.pt/'">Cancelar
+                    </button>
+                </p>
+            </div>
+        </div>
+    </form>
+</div>
+<div class="footer">
+    <div style="text-align: center">
+        <a href="http://pocketporn.tv/termsandconditions">Termos e Condi&ccedil;&otilde;es
+        Gerais</a>
+    </div>
+</div>
+<!--  -->
+
+<script src="js/jquery-2.1.1.js"></script>
+<script src="js/plugins/sweetalert/sweetalert.min.js"></script>
+<script type="text/javascript" src="js/pp.js"></script>
+
+<script>
+
+    $(document).ready(function () {
+        setTimeout(function(){ 
+            overlay();
+
+         }, 50);
+        
+        $('.demo1').click(function(){
+            swal({
+                title: "Welcome in Alerts",
+                text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+            });
+        });
+
+        $('.demo2').click(function(){
+            swal({
+                title: "Good job!",
+                text: "You clicked the button!",
+                type: "success"
+            });
+        });
+
+        $('.demo3').click(function () {
+            swal({
+                title: "Are you sure?",
+                text: "You will not be able to recover this imaginary file!",
+                type: "warning",
+                showCancelButton: true,
+                confirmButtonColor: "#DD6B55",
+                confirmButtonText: "Yes, delete it!",
+                closeOnConfirm: false
+            }, function () {
+                swal("Deleted!", "Your imaginary file has been deleted.", "success");
+            });
+        });
+
+        $('.demo4').click(function () {
+            swal({
+                        title: "Are you sure?",
+                        text: "Your will not be able to recover this imaginary file!",
+                        type: "warning",
+                        showCancelButton: true,
+                        confirmButtonColor: "#DD6B55",
+                        confirmButtonText: "Sim",
+                        cancelButtonText: "No, cancel plx!",
+                        closeOnConfirm: false,
+                        closeOnCancel: false },
+                    function (isConfirm) {
+                        if (isConfirm) {
+                            swal("Deleted!", "Your imaginary file has been deleted.", "success");
+                        } else {
+                            swal("Cancelled", "Your imaginary file is safe :)", "error");
+                        }
+                    });
+        });
+
+        function overlay () {
+            swal({
+                        // title: "Are you sure?",Esta é uma página de conteúdo adulto. Confirma que é maior de idade?
+                        title: "Esta é uma página de conteúdo adulto. Confirma que é maior de idade?",
+                        text: "tenho mais de 18 anos",
+                        type: "warning",
+                        showCancelButton: true,
+                        confirmButtonColor: "#DD6B55",
+
+                        confirmButtonText: "Sim",
+                        cancelButtonText: "Não",
+                        closeOnConfirm: false,
+                        closeOnCancel: false },
+                    function (isConfirm) {
+                        if (isConfirm) {
+                            swal("Congrate!", "Welcome to OurSite", "success");
+                        } else {
+                            // swal("Cancelled", "Your imaginary file is safe :)", "error");
+                            window.location.href='https://www.google.pt/';
+                        }
+                    });
+        }
+
+
+    });
+
+</script>
+</body>
+</html>
