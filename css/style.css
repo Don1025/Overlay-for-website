@@ -1,0 +1,181 @@
+body {
+
+    background-color: #FFFFFF;
+    font-family: "Gill Sans MT", "Trebuchet MS", sans-serif;
+    font-size: 12px;
+    color: #000000;
+    text-align: center;
+    max-width: 768px;
+    margin: 0 auto;
+
+}
+
+img {
+    vertical-align: -webkit-baseline-middle;
+}
+
+a
+{
+    text-decoration: none;
+    color: black;
+}
+
+.container {
+    max-width: 425px;
+    margin: 0 auto;
+    padding-bottom: 10px;
+    z-index: -1;
+}
+
+.logo {
+    width: 50%;
+    margin: 0px auto 6px;
+}
+
+.logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+.main-content {
+    margin-bottom: 10px;
+}
+
+.main-content img {
+    max-width: 90%;
+    height: auto;
+}
+
+.cost {
+    font-family:'Oswald', sans-serif;
+    text-align: center;
+}
+ 
+p {
+    font-size: 12px;
+    margin: 5px auto;
+}
+
+form h4 {
+    margin: 10px 0 5px;
+    font-size: 14px;
+}
+
+form h4:last-child {
+    margin: 5px 0 10px;
+}
+
+.btn {
+    width: 100%;
+    margin: 10px auto 0;
+}
+
+.btn h1 {
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    max-width: 120px;
+    padding: 10px 10px;
+    margin: 0 auto;
+    color: #FFF;
+    font-size: 22px;
+    font-family: 'Oswald', sans-serif;
+    background-color: #20A900;
+    border-bottom: solid 3px #4E771C;
+    border-bottom-left: solid 3px #4E771C;
+    border-bottom-right: solid 3px #4E771C;
+    border-radius: 3px;
+}
+
+.btn h1 a {
+    color: inherit;
+}
+
+.btn.step1 {
+    margin: 10px auto 0;
+    text-align: center;
+}
+
+.btn.step1 h1 {
+    display: inline-block;
+    margin: 0 1%;
+    width: 46%;
+}
+
+.btn.step1 h1 span {
+    font-size: 15px;
+}
+
+.btn.sair{
+    background-color: red;
+    border-bottom: solid 3px red;
+    border-bottom-left: solid 3px red;
+    border-bottom-right: solid 3px red;
+}
+
+.btn.btn-cancel{
+    background-color: #868686;
+	font-size: 12px;
+	width: 100px;
+	border: 1px solid transparent;
+	color: white;
+}
+
+
+.btn-default {
+    padding: 5px 12px 7px;
+    background-color: #20A900;
+    border: 0;
+    border-bottom: solid 3px #4E771C;
+    color: #fff;
+    width: 90%;
+    display: inline;
+    margin-bottom: 0;
+    font-family: 'Oswald', sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border-radius: 4px
+}
+
+
+.footer {
+    width: 100%;
+    bottom: 0;
+    color:#000000; 
+    background-color: #EEEEEE;
+    border-color: #EEEEEE;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+}
+
+.footer a {
+    text-decoration: underline;
+    color: #000000;
+}
+
+.overlay {
+  background:rgba(0,0,0,0.91);
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  position: fixed;
+  color: white;
+}
+
+.btn-form
+{
+    z-index: 20;
+}
